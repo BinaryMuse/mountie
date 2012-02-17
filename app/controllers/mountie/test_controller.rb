@@ -1,5 +1,5 @@
 class Mountie::TestController < Mountie::ApplicationController
   def index
-    render text: "Testing"
+    render text: Mountie.configuration.name
   end
 end
