@@ -1,0 +1,7 @@
+<h1>Entry</h1>
+
+<p><%= @entry.data %></p>
+
+<%= link_to "Edit Entry", edit_entry_path(@entry) %><br />
+<%= link_to "Delete Entry", entry_path(@entry), method: :delete, confirm: "Are you sure?" %><br />
+<%= link_to "All Entries", entries_path %>

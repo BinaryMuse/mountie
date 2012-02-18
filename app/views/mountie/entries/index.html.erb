@@ -1,0 +1,9 @@
+<h1>Entries</h1>
+
+<ul>
+  <% for entry in @entries %>
+    <%= content_tag :li, link_to(entry.data, entry) %>
+  <% end %>
+</ul>
+
+<%= link_to "New Entry", new_entry_path %>
